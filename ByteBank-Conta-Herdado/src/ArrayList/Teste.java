@@ -15,7 +15,7 @@ public class Teste {
         
         
         
-    
+ 
         List<Conta> lista = new ArrayList<>();
 
         ContaCorrente conta1 = new ContaCorrente(50, 60);
@@ -23,22 +23,24 @@ public class Teste {
 
         lista.add(conta1);
         lista.add(conta2);
+        System.out.println(lista.size());
 
        // Conta ref = (Conta) lista.get(0); //cast
       //  System.out.println(ref.getNumero());
 
         for (int i = 0; i < lista.size(); i++) {
             Conta oRef =(Conta)lista.get(i);
+            
             System.out.println(oRef);
 
         }
         
         System.out.println("-----------------");
 
-        for (Object o : lista) {
+        for (Conta o : lista) {
 //           int i = 0;
 //           Conta oRef = (Conta)lista.get(i);
-           System.out.println(o.toString());
+            System.out.println(o);
         }
 
     }
