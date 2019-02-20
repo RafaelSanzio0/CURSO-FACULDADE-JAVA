@@ -5,7 +5,10 @@ import java.util.Scanner;
 
 public class VetorMenu {
 
+    
+    //* nao criei a opção 8 pois os metodos de ordenação ja cria outro vetor com os mesmos dados e retorna o vetor ordenado
     static int[] numeros;
+    
 
     public static void main(String[] args) {
 
@@ -58,17 +61,23 @@ public class VetorMenu {
                     System.out.println("Valor excluido da posicao " + idx + ": " + val);
                 }
 
+            } else if (op == 4) {
+                System.out.println("Digite os indexs de troca");
+                int index = scn.nextInt();
+                int index2 = scn.nextInt();
+                trocar(numeros, index, index2);
+
             } else if (op == 5) {
                 System.out.println((Arrays.toString(maiorMenor())));
                 scn.nextLine();
 
             } else if (op == 6) {
                 ordemCrescente(numeros);
-                
 
             } else if (op == 7) {
                 ordemDecrescente(numeros);
             }
+
             System.out.println("\n\nPressione ENTER para prosseguir.");
             scn2.nextLine();
 
@@ -110,16 +119,34 @@ public class VetorMenu {
         return numero;
     }
 
-    static int trocar(int index, int index2) {
-        if (index < 0 || index > numeros.length - 1) {
-            return -1;
+    static void trocar(int[] vetor, int index, int index2) {
+        if (index < 0 || index > vetor.length - 1) {
+            System.out.println("troca efetuada");
+
         }
-        if (index2 < 0 || index2 > numeros.length - 1) {
-            return -1;
+        if (index2 < 0 || index2 > vetor.length - 1) {
+            System.out.println("troca efetuada");
+
         }
-        int numero = numeros[index];
-        int numero2 = numeros[index2];
-        return 0;
+        int temp;
+        int numero1 = 0;
+        int numero2 = 0;
+        for (int i = 0; i < vetor.length; i++) {
+            numero1 = numeros[index];
+            numero2 = numeros[index2];
+        }
+
+        temp = numero1;
+        numero1 = numero2;
+        numero2 = temp;
+
+        System.out.print("\n[");
+        for (int k = 0; k < vetor.length; k++) {
+            System.out.print(vetor[k] + " ");
+        }
+        System.out.println("]");
+
+        System.out.printf("Posicao de numero %d com valor %d e Posicao de numero %d com valor %d", index, numero1, index2, numero2);
     }
 
     static Object[] maiorMenor() {
@@ -143,8 +170,23 @@ public class VetorMenu {
         return object;
     }
 
+//    static void maiorAndMenor(){
+//        int maior = -999999;
+//        int menor = 999999;
+//        for (int i = 0; i < numeros.length; i++) {
+//
+//            if (numeros[i] > maior) {
+//                maior = numeros[i];
+//
+//            }
+//            if (numeros[i] < menor) {
+//                menor = numeros[i];
+//            }
+//            System.out.println(maior);
+//            System.out.println(menor);
+//    }
     static void ordemCrescente(int[] vetor) {
-        int temp = 0;
+        int temp;
 
         for (int i = 0; i < vetor.length; i++) {
             for (int j = i + 1; j < vetor.length; j++) {
@@ -164,7 +206,7 @@ public class VetorMenu {
     }
 
     static void ordemDecrescente(int[] vetor) {
-        int temp = 0;
+        int temp;
 
         for (int i = 0; i < vetor.length; i++) {
             for (int j = i + 1; j < vetor.length; j++) {
