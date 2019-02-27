@@ -1,4 +1,4 @@
-package ListasLigadas;
+package ListasLigadasAlura;
 
 public class ListasLigadas {
 

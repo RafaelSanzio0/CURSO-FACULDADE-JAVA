@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ListasLigadas;
+package ListasLigadasAlura;
 
 /**
  *
@@ -24,6 +24,7 @@ public class testaLL {
         System.out.println(lista);
         
         lista.adicionaNoComeco("carlos");
+        lista.contem("carlos");
         System.out.println(lista);
         
         
