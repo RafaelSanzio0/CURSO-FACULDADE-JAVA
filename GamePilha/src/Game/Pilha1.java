@@ -6,7 +6,6 @@
 package Game;
 
 import java.util.Arrays;
-import java.util.Random;
 
 /**
  *
@@ -14,8 +13,8 @@ import java.util.Random;
  */
 public class Pilha1 {
 
-    private int tamanhoMaximo = 10;
-    private int[] pilhaDeInteiros;
+    private final int tamanhoMaximo = 10;
+    private final int[] pilhaDeInteiros;
     private int topo = -1;
 
     public Pilha1() {
@@ -26,9 +25,20 @@ public class Pilha1 {
         topo++;
         pilhaDeInteiros[topo] = n;
     }
+    
+    public void pop(){
+       pilhaDeInteiros[topo] = topo--;
+    }
       
     @Override
     public String toString(){
         return Arrays.toString(pilhaDeInteiros);
+    }
+
+ 
+    public int getElemento() {
+        int a = 0;
+        return pilhaDeInteiros[a];
+        
     }
 }

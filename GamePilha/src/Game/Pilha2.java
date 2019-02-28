@@ -13,8 +13,8 @@ import java.util.Arrays;
  */
 public class Pilha2 {
 
-    private int tamanhoMaximo = 10;
-    private int[] pilhaDeInteiros;
+    private final int tamanhoMaximo = 10;
+    private final int[] pilhaDeInteiros;
     private int topo = -1;
 
     public Pilha2() {
@@ -24,6 +24,10 @@ public class Pilha2 {
     public void push(int n) {
         topo++;
         pilhaDeInteiros[topo] = n;
+    }
+    
+    public void pop(){
+       pilhaDeInteiros[topo] = topo--;
     }
       
     @Override
