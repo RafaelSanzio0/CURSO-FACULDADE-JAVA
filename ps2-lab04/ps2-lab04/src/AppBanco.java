@@ -1,6 +1,9 @@
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class AppBanco {
@@ -21,7 +24,8 @@ public class AppBanco {
                     "Criar conta-salário",
                     "Mostrar informações do banco",
                     "Sair",
-                    "SalvarDados");
+                    "Salvar Dados",
+                    "ler Dados");
             if (opcao == 1) {
                 criarContaNormal();
             } else if (opcao == 2) {
@@ -33,8 +37,10 @@ public class AppBanco {
                 DialogoGui.mostrarMsg(s);
             } else if (opcao == 5) {
                 sair = true;
-            }else if (opcao == 6){
+            } else if (opcao == 6) {
                 salvarDadosConta();
+            } else if (opcao == 7) {
+                System.out.println(ler());
             }
         }
     }
@@ -68,9 +74,10 @@ public class AppBanco {
         banco.adicionar(c);
     }
 
-    public static void salvarDadosConta() throws FileNotFoundException {
-        try (PrintWriter pw = new PrintWriter("veiculos.txt")) {
-            for (ContaAbstrata ca : lista) {
+    public static void salvarDadosConta() {
+
+        try (PrintWriter pw = new PrintWriter("banco.txt")) {
+            for (ContaAbstrata ca : banco.obterTodasContas()) {
                 String linha = "";
 
                 if (ca instanceof ContaNormal) {
@@ -94,4 +101,31 @@ public class AppBanco {
 
     }
 
+    public static List<ContaAbstrata> ler() {
+        try {
+            List<String> linhas = Files.readAllLines(Paths.get("banco.txt"));
+
+            for (String linha : linhas) {
+                String[] info = linha.split(";");
+
+                ContaAbstrata contaAbstrata = null;
+
+                if (info[0].equals("ContaNormal")) {
+                    contaAbstrata = new ContaNormal(Integer.parseInt(info[2]), info[1], Double.parseDouble(info[3]));
+
+                } else if (info[0].equals("ContaComLimite")) {
+                    contaAbstrata = new ContaComLimite(Integer.parseInt(info[2]), info[1], Double.parseDouble(info[3]), Double.parseDouble(info[4]));
+
+                } else if (info[0].equals("ContaSalario")) {
+                    contaAbstrata = new ContaSalario(Integer.parseInt(info[2]), info[1], Double.parseDouble(info[3]), info[4]);
+                }
+
+                banco.adicionar(contaAbstrata);
+            }
+
+        } catch (IOException ex) {
+            System.out.println(">> Falha na leitura do arquivo!");
+        }
+        return banco.obterTodasContas();
+    }
 }
