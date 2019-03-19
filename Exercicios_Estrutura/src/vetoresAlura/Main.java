@@ -1,4 +1,4 @@
-package vetores;
+package vetoresAlura;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package vetores;
+package vetoresAlura;
 
 import java.util.Arrays;
 
