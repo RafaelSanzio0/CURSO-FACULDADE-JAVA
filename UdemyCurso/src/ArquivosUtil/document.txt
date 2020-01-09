@@ -1,0 +1,25 @@
+**** MODELO DE EXECUCAO DO JAVA
+- codigo fonte é compilado em bytecode
+- logo em seguida o bytecode é executado pela JVM especifica do SO
+
+• Toda classe em Java é uma subclasse da classe Object
+• Object possui os seguintes métodos:
+• getClass- retorna o tipo do objeto
+• equals - compara se o objeto é igual a outro
+• hashCode - retorna um código hash do objeto
+• toString - converte o objeto para string
+
+Membros estáticos
+• Também chamados membros de classe
+• Em oposição a membros e instância
+• São membros que fazem sentido independentemente de objetos. Não
+precisam de objeto para serem chamados. São chamados a partir do
+próprio nome da classe.
+• Aplicações comuns:
+• Classes utilitárias - por exemplo, uma classe triango eu teria varios tipos de triangulo sendo assim nescessario
+instanciar cada triangulo para obter o valor do da sua area(metodo) , já uma classe calculadora eu sempre terei
+os mesmos valores para qualquer tipo d objeto que seria instanciado como calculadora, essa e uma bela maneira
+de indentificar quando usar metodos estaticos em classes.
+• Declaração de constantes
+• Uma classe que possui somente membros estáticos, pode ser uma classe
+estática também. Esta classe não poderá ser instanciada.

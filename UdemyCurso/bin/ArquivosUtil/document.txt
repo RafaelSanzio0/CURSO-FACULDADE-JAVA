@@ -1,0 +1,3 @@
+**** MODELO DE EXECUCAO DO JAVA
+- codigo fonte é compilado em bytecode
+- logo em seguida o bytecode é executado pela JVM especifica do SO
