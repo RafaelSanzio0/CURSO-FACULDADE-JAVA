@@ -8,3 +8,150 @@
 • equals - compara se o objeto é igual a outro
 • hashCode - retorna um código hash do objeto
 • toString - converte o objeto para string
+
+Membros estáticos
+• Também chamados membros de classe
+• Em oposição a membros e instância
+• São membros que fazem sentido independentemente de objetos. Não
+precisam de objeto para serem chamados. São chamados a partir do
+próprio nome da classe.
+• Aplicações comuns:
+• Classes utilitárias - por exemplo, uma classe triango eu teria varios tipos de triangulo sendo assim nescessario
+instanciar cada triangulo para obter o valor do da sua area(metodo) , já uma classe calculadora eu sempre terei
+os mesmos valores para qualquer tipo d objeto que seria instanciado como calculadora, essa e uma bela maneira
+de indentificar quando usar metodos estaticos em classes.
+• Declaração de constantes
+• Uma classe que possui somente membros estáticos, pode ser uma classe
+estática também. Esta classe não poderá ser instanciada.
+
+Palavra this
+• É uma referência para o próprio objeto
+• Usos comuns:
+• Diferenciar atributos de variáveis locais
+• Passar o próprio objeto como argumento na chamada de um método ou
+construtor
+
+Encapsulamento
+• É um princípio que consiste em
+esconder detalhes de implementação
+de uma classe, expondo apenas
+operações seguras e que mantenham
+os objetos em um estado consistente.
+• Regra de ouro: o objeto deve sempre
+estar em um estado consistente, e a
+própria classe deve garantir isso.
+
+Modificadores de acesso
+• https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
+• private: o membro só pode ser acessado na própria classe
+• (nada): o membro só pode ser acessado nas classes do mesmo pacote
+• protected: o membro só pode ser acessado no mesmo pacote, bem como em
+subclasses de pacotes diferentes
+• public: o membro é acessado por todas classes (ao menos que ele resida em
+um módulo diferente que não exporte o pacote onde ele está)
+
+RELEMBRANDO JAVA :D
+
+dicas : nao se compara instâncias de classes utilizando == e sim com equals
+Para os tipos primitivos o operador == compara os valores normalmente;
+Já para classes o operador == verifica se uma classe é exatamente igual a outra;
+No caso de String, compara a referência, mesmo que os textos sejam iguais, estando em lugares diferentes na memória, ele falhará ao compará-los. Ou seja, ele não verifica se dois objetos têm o mesmo valor.
+
+equals é um método que pertence à classe Object, que retorna um valor booleano (boolean) e pode ser reescrito em qualquer classe.
+
+Como ele pode ser sobrescrito, dependendo da implementação, pode executar ações diferentes;
+No caso de String, ele compara o conteúdo e não a referência;
+
+=============================================================================
+
+
+EXCEPTIONS
+
+Throwable ? Classe mãe de todos os erros e exceções
+
+Error ? está ligado a erros que não é possível tratar, como por exemplo memória insuficiente da JVM. (unchecked)
+
+Exception ? erros que podem ser tratados pelo desenvolvedor, existem dois tipos de Exception que são:
+
+Unchecked
+Exceptions que acontecem em tempo de execução do programa , neste tipo de erro existem a classe runTimeException mãe de classes como arrayIndexofBound…, NullofPointException, arithimecException e assim por diante.
+
+Checked
+Exceptions em que o compilador já reclama e pede para você tratar assim que o código é escrito, ou seja, não é necessário executar o programa para lançar este tipo de exceção.
+
+CASTING E INSTACEOF
+
+
+Com o instanceof é possível verificar se uma instância é do tipo de uma classe
+Ex:
+
+Pessoa pessoa = new Pessoa();
+if (pessoa instanceof Pessoa){
+	sout(“é da classe pessoa”);
+}
+
+Upcasting
+Geralmente é feito de forma automática
+É quando uma superclasse recebe uma referência da subclasse
+
+Ex: Aluno aluno = new Aluno();     //classe tipo aluno
+      Pessoa pessoaAluno = aluno; // transformando a classe Pessoa em Aluno
+
+Downcasting
+É feito de forma manual
+É quando uma subclasse recebe uma referência de uma superclasse
+
+Ex: Pessoa pessoa = new Pessoa(); //classe tipo pessoa
+	      Aluno aluno = (Aluno) pessoa; //transformando a classe aluno em pessoa
+
+Hierarquia
+PESSOA
+ALUNO
+
+
+WRAPPERS
+
+Wrappers seriam as classes dos tipos primitivos do java como short, byte, int, long, float, double, boolean e char
+
+
+Tipos referência vs. tipos valor (diferença principal)
+
+classes - Tipos referência
+um obj é criado no STACK e passa apontar para um endereço de memoria x908492 no HEAP
+onde contem aqueles dados
+Objetos não utilizados são desalocados em um
+momento próximo pelo garbage collector
+
+tipo primitivo -  tipos valor
+um obj é criado no STACK e o valor é diretamente atribuido a este obj
+"Objetos" são desalocados imediatamente quando
+seu escopo de execução é finalizado
+
+Vetores
+• Em programação, "vetor" é o nome dado a arranjos unidimensionais
+• Arranjo (array) é uma estrutura de dados:
+• Homogênea (dados do mesmo tipo)
+• Ordenada (elementos acessados por meio de posições)
+• Alocada de uma vez só, em um bloco contíguo de memória
+• Vantagens:
+• Acesso imediato aos elementos pela sua posição
+• Desvantagens:
+• Tamanho fixo
+• Dificuldade para se realizar inserções e deleções
+
+• Lista é uma estrutura de dados:
+• Homogênea (dados do mesmo tipo)
+• Ordenada (elementos acessados por meio de posições)
+• Inicia vazia, e seus elementos são alocados sob demanda
+• Cada elemento ocupa um "nó" (ou nodo) da lista
+• Tipo (interface): List
+• Classes que implementam: ArrayList, LinkedList, etc.
+• Vantagens:
+• Tamanho variável
+• Facilidade para se realizar inserções e deleções
+• Desvantagens:
+• Acesso sequencial aos elementos *
+
+
+
+

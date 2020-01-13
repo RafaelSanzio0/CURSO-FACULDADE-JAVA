@@ -5,6 +5,11 @@ public class Product {
     private double price;
     private int quantity;
 
+    public Product(String nome, double price) {
+        this.nome = nome;
+        this.price = price;
+    }
+
     @Override
     public String toString() {
         return "Product{" +
