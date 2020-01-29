@@ -152,6 +152,21 @@ Vetores
 • Desvantagens:
 • Acesso sequencial aos elementos *
 
-
-
-
+Quero desfazer tudo que eu fiz desde o último commit
+git clean -df
+git checkout -- .
+Preciso remover o último commit, porém mantendo os
+arquivos do jeito que estão.
+git reset --soft HEAD~1
+Preciso remover o último commit, inclusive as
+alterações nos arquivos.
+git reset --hard HEAD~1
+Quero alterar temporariamente os arquivos do projeto
+de modo a ficarem no estado do commit informado.
+ATENÇÃO: não podem haver modificações não
+commitadas no projeto.
+NOTA: para voltar ao último commit faça:
+git checkout master
+git checkout <código do commit>
+EXEMPLO: git checkout e8a52f3
+Preciso apagar o último commit no Github git push -f origin HEAD^:master
