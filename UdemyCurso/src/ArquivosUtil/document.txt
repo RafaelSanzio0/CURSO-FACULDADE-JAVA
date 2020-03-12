@@ -186,3 +186,20 @@ COMPOSICAO
 • Coesão = CADA OBJ E RESPONSAVEL POR UMA UNICA COISA, NAO SE DEVE MISTURAR
 • Flexibilidade
 • Reuso
+
+
+StringBuild
+
+String pelo fato de ser um objeto imutavel ele sempre cria outros objetos do tipo string(pense
+na mesma variavel), ficandoum pouco custoso em questao de memoria.
+Ja o Strinbuilder recria no mesmo objeto(na variavel) o novo valor incrementado.
+
+
+FINAL
+
+A palavra final em um classe evita que aquela classe seja extendida, ou que um metodo seja sobre
+posto caso seja adicionado ao metodo
+
+- o final adicionado a uma classe melhora a performance daquela classe
+- questao de seguranca(nao quero que esta classe seja herdada,ou aquele metodo sobreposto,etc..)
+- convencao adicionar o final em metodos @override

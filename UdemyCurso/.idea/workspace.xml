@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -29,8 +30,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../relembrando-java" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -40,13 +41,13 @@
       <recent name="C:\Users\rsillima\Documents\projetos git\CURSO-FACULDADE-JAVA\UdemyCurso\src\ArquivosUtil" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainEnum">
-    <configuration name="DateCalendar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Date.DateCalendar" />
+  <component name="RunManager" selected="Application.MainDesafio">
+    <configuration name="BuferedWriter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="file.BuferedWriter" />
       <module name="UdemyCurso" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Date.*" />
+          <option name="PATTERN" value="file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -54,12 +55,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Date.MainData" />
+    <configuration name="FileTryWithResources" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="file.FileTryWithResources" />
       <module name="UdemyCurso" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Date.*" />
+          <option name="PATTERN" value="file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +68,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainDesafio (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="List.MainDesafio" />
+    <configuration name="LerFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="file.LerFile" />
       <module name="UdemyCurso" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="List.*" />
+          <option name="PATTERN" value="file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -80,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainDesafio (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MainDesafio" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Matriz.MainDesafio" />
       <module name="UdemyCurso" />
       <extension name="coverage">
@@ -93,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainEnum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Enum.MainEnum" />
+    <configuration name="ManipulandoFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="file.ManipulandoFiles" />
       <module name="UdemyCurso" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Enum.*" />
+          <option name="PATTERN" value="file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainEnum" />
-        <item itemvalue="Application.DateCalendar" />
-        <item itemvalue="Application.MainData" />
-        <item itemvalue="Application.MainDesafio (2)" />
-        <item itemvalue="Application.MainDesafio (1)" />
+        <item itemvalue="Application.MainDesafio" />
+        <item itemvalue="Application.ManipulandoFiles" />
+        <item itemvalue="Application.FileTryWithResources" />
+        <item itemvalue="Application.BuferedWriter" />
+        <item itemvalue="Application.LerFile" />
       </list>
     </recent_temporary>
   </component>
@@ -146,65 +147,77 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1579309719990" />
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1580259947903">
+    <state x="233" y="0" key="#Project_Structure" timestamp="1580544045403">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1580259947903" />
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1580544045403" />
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser" timestamp="1580587116753">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1580587116753" />
     <state width="402" height="446" key="DebuggerActiveHint" timestamp="1579312094718">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="402" height="446" key="DebuggerActiveHint/0.0.1280.680@0.0.1280.680" timestamp="1579312094718" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1580260718669">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1583012306131">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1580260718669" />
-    <state width="1237" height="198" key="GridCell.Tab.0.bottom" timestamp="1580261011492">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583012306131" />
+    <state width="1237" height="254" key="GridCell.Tab.0.bottom" timestamp="1583947657519">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="198" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580261011492" />
-    <state width="1237" height="198" key="GridCell.Tab.0.center" timestamp="1580261011492">
+    <state width="1237" height="254" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583947657519" />
+    <state width="1237" height="254" key="GridCell.Tab.0.center" timestamp="1583947657518">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="198" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1580261011492" />
-    <state width="1237" height="198" key="GridCell.Tab.0.left" timestamp="1580261011492">
+    <state width="1237" height="254" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583947657518" />
+    <state width="1237" height="254" key="GridCell.Tab.0.left" timestamp="1583947657518">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="198" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1580261011492" />
-    <state width="1237" height="198" key="GridCell.Tab.0.right" timestamp="1580261011492">
+    <state width="1237" height="254" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583947657518" />
+    <state width="1237" height="254" key="GridCell.Tab.0.right" timestamp="1583947657518">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="198" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580261011492" />
-    <state width="1237" height="2" key="GridCell.Tab.1.bottom" timestamp="1579312151981">
+    <state width="1237" height="254" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583947657518" />
+    <state width="1237" height="279" key="GridCell.Tab.1.bottom" timestamp="1583009398444">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1579312151981" />
-    <state width="1237" height="2" key="GridCell.Tab.1.center" timestamp="1579312151981">
+    <state width="1237" height="279" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583009398444" />
+    <state width="1237" height="279" key="GridCell.Tab.1.center" timestamp="1583009398444">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1579312151981" />
-    <state width="1237" height="2" key="GridCell.Tab.1.left" timestamp="1579312151981">
+    <state width="1237" height="279" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583009398444" />
+    <state width="1237" height="279" key="GridCell.Tab.1.left" timestamp="1583009398444">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1579312151981" />
-    <state width="1237" height="2" key="GridCell.Tab.1.right" timestamp="1579312151981">
+    <state width="1237" height="279" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583009398444" />
+    <state width="1237" height="279" key="GridCell.Tab.1.right" timestamp="1583009398444">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1579312151981" />
+    <state width="1237" height="279" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583009398444" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1579309703191">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1579309703191" />
-    <state x="348" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1580256512022">
+    <state x="348" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1583947500578">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="348" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1580256512022" />
+    <state x="348" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1583947500578" />
     <state x="0" y="0" width="609" height="680" key="find.popup" timestamp="1578847225177">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="0" width="609" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1578847225177" />
+    <state x="91" y="0" key="new project wizard" timestamp="1582162858644">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1582162858644" />
     <state x="297" y="151" key="run.anything.popup" timestamp="1578847241976">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1578847241976" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1582825252452">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582825252452" />
   </component>
 </project>
